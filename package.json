@@ -1,6 +1,6 @@
 {
   "name": "react-native-nav",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A cross-platform (iOS / Android), fully customizable, React Native Navigation Bar component.",
   "main": "index.js",
   "directories": {
