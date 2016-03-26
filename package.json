@@ -1,0 +1,52 @@
+{
+  "name": "react-native-nav",
+  "version": "1.0.0",
+  "description": "A cross-platform (iOS / Android), fully customizable, React Native Navigation Bar component.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react-native": ">= 0.16"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.0",
+    "eslint": "^2.5.1",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-plugin-flowtype": "^2.2.2",
+    "eslint-plugin-react": "^4.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jineshshah36/react-native-navbar.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "ios",
+    "android",
+    "navigation",
+    "bar",
+    "component",
+    "customizable"
+  ],
+  "author": {
+    "email": "jineshshah36@gmail.com",
+    "name": "Jinesh Shah",
+    "url": "https://github.com/jineshshah36"
+  },
+  "maintainers": [
+    {
+      "email": "jineshshah36@gmial.com",
+      "name": "Jinesh Shah"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jineshshah36/react-native-navbar/issues"
+  },
+  "homepage": "https://github.com/jineshshah36/react-native-navbar#readme"
+}
