@@ -7,7 +7,7 @@ const {
   Platform,
 } = React
 import StatusBarEnhanced from './components/StatusBarEnhanced'
-import NavbarButtonEnhanced from './components/NavbarButtonEnhanced'
+import NavButton from './components/NavButton'
 import styles from './styles'
 
 class NavigationBar extends Component {
@@ -26,6 +26,7 @@ class NavigationBar extends Component {
     style: PropTypes.object,
     buttonsIOS: PropTypes.array,
     buttonsAndroid: PropTypes.array,
+    children: PropTypes.node,
   }
 
   static defaultProps = {
@@ -49,7 +50,7 @@ class NavigationBar extends Component {
     const { buttonsAndroid, style } = this.props
     return buttonsAndroid.map(
       (button: Object, index: number) => (
-        <NavbarButtonEnhanced key={index}
+        <NavButton key={index}
           style={style}
           button={button}
         />
@@ -66,13 +67,13 @@ class NavigationBar extends Component {
       return (
         <View style={[styles.navBar, styles.navBarIOS, style.navBarIOS]}>
           <View>
-            <NavbarButtonEnhanced style={style}
+            <NavButton style={style}
               button={buttonsIOS[0]}
             />
           </View>
           {this.getTitleElement()}
           <View>
-            <NavbarButtonEnhanced style={style}
+            <NavButton style={style}
               button={buttonsIOS[1]}
             />
           </View>
@@ -92,14 +93,14 @@ class NavigationBar extends Component {
   }
 
   render(): React.Element {
-    const { style, statusBarIOS, statusBarAndroid } = this.props
+    const { style, statusBarIOS, statusBarAndroid, children } = this.props
     return (
       <View style={[styles.navBarContainer, style.navBarContainer]}>
         <StatusBarEnhanced style={style}
           statusBarIOS={statusBarIOS}
           statusBarAndroid={statusBarAndroid}
         />
-        {this.getNavBar()}
+        {children}
       </View>
     )
   }

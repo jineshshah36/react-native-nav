@@ -9,13 +9,17 @@ const {
 } = React
 import styles from '../styles'
 
-export default class NavbarButtonEnhanced extends Component {
+export default class NavButton extends Component {
   static propTypes = {
     style: PropTypes.oneOfType([
       PropTypes.object,
       PropTypes.array,
     ]),
     button: PropTypes.object,
+    children: PropTypes.node,
+    onPress: PropTypes.func,
+    navBarButtonTextStyle: Text.propTypes.style,
+    navBarButtonStyle: View.propTypes.style,
   }
 
   static defaultProps = {
@@ -26,48 +30,48 @@ export default class NavbarButtonEnhanced extends Component {
   }
 
   getNavBarButtonStyles(): Array {
-    const { style, button } = this.props
+    const { style, navBarButtonStyle } = this.props
     if (Platform.OS === 'ios') {
       return [
         styles.navBarButtonIOS,
         style.navBarButtonIOS,
-        button.navBarButtonStyle,
+        navBarButtonStyle,
       ]
     } else if (Platform.OS === 'android') {
       return [
         styles.navBarButtonAndroid,
         style.navBarButtonAndroid,
-        button.navBarButtonStyle,
+        navBarButtonStyle,
       ]
     }
     return null
   }
 
   getNavBarButtonTextStyles(): Array {
-    const { style, button } = this.props
+    const { style, navBarButtonTextStyle } = this.props
     if (Platform.OS === 'ios') {
       return [
         styles.navBarButtonText,
         style.navBarButtonTextIOS,
-        button.navBarButtonTextStyle,
+        navBarButtonTextStyle,
       ]
     } else if (Platform.OS === 'android') {
       return [
         styles.navBarButtonText,
         style.navBarButtonTextAndroid,
-        button.navBarButtonTextStyle,
+        navBarButtonTextStyle,
       ]
     }
     return null
   }
 
   getTouchable(): React.Element {
-    const { button } = this.props
+    const { onPress, children } = this.props
     return (
-      <TouchableOpacity onPress={button.onPress}>
+      <TouchableOpacity onPress={onPress}>
         <View style={this.getNavBarButtonStyles()}>
           <Text style={this.getNavBarButtonTextStyles()}>
-            {button.title}
+            {children}
           </Text>
         </View>
       </TouchableOpacity>
