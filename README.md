@@ -5,6 +5,7 @@
 - [Examples](#examples)
 - [Getting started](#getting-started)
 - [API](#api)
+- [Images](#images)
 - [Usage with webpack](#usage-with-webpack)
 - [Questions?](#questions)
 
@@ -39,6 +40,12 @@ import NavBar from 'react-native-nav'
 ### API
 
 Coming soon...
+
+### Images
+
+![ios](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/Screenshot%202016-03-26%2018.31.23.png)
+
+![android](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/Screenshot%202016-03-26%2018.31.58.png)
 
 ### Questions?
 Feel free to contact me via
