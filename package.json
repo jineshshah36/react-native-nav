@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jineshshah36/react-native-navbar.git"
+    "url": "git+https://github.com/jineshshah36/react-native-nav.git"
   },
   "keywords": [
     "react",
@@ -46,7 +46,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jineshshah36/react-native-navbar/issues"
+    "url": "https://github.com/jineshshah36/react-native-nav/issues"
   },
-  "homepage": "https://github.com/jineshshah36/react-native-navbar#readme"
+  "homepage": "https://github.com/jineshshah36/react-native-nav#readme"
 }
