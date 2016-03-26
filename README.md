@@ -44,7 +44,7 @@ Coming soon...
 Feel free to contact me via
 - [Twitter](https://twitter.com/jineshshah36)
 
-```
+```javascript
 style = {
   navBarTitleText: {},
   navBarButtonIOS: {},
@@ -56,5 +56,14 @@ style = {
   navBarIOS: {},
   navBarAndroid: {},
   navBarContainer: {},
+}
+```
+
+```javascript
+props = {
+  style: {},
+  buttonsAndroid: [],
+  buttonsIOS: [],
+  title: ''
 }
 ```

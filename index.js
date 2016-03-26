@@ -10,32 +10,15 @@ import StatusBarEnhanced from './components/StatusBarEnhanced'
 import NavbarButtonEnhanced from './components/NavbarButtonEnhanced'
 import styles from './styles'
 
-const ButtonShape = {
-  title: PropTypes.string,
-  style: PropTypes.any,
-  handler: PropTypes.func,
-}
-
-const TitleShape = {
-  title: PropTypes.string,
-  tintColor: PropTypes.string,
-}
-
 class NavigationBar extends Component {
 
   static propTypes = {
     tintColor: PropTypes.string,
     statusBarTintColor: PropTypes.string,
-    leftButton: PropTypes.oneOfType([
-      PropTypes.shape(ButtonShape),
-      PropTypes.element,
-    ]),
-    rightButton: PropTypes.oneOfType([
-      PropTypes.shape(ButtonShape),
-      PropTypes.element,
-    ]),
     title: PropTypes.oneOfType([
-      PropTypes.shape(TitleShape),
+      PropTypes.shape({
+        text: PropTypes.string,
+      }),
       PropTypes.element,
     ]),
     statusBarIOS: PropTypes.object,
@@ -53,11 +36,11 @@ class NavigationBar extends Component {
     buttonsAndroid: [],
   }
 
-  getTitleElement(data: Object): React.Element {
-    const { style } = this.props
+  getTitleElement(): React.Element {
+    const { style, title } = this.props
     return (
       <Text style={[styles.navBarTitleText, style.navBarTitleText]}>
-        {data.title}
+        {title.text}
       </Text>
     )
   }
@@ -87,7 +70,7 @@ class NavigationBar extends Component {
               button={buttonsIOS[0]}
             />
           </View>
-          {this.getTitleElement(title)}
+          {this.getTitleElement()}
           <View>
             <NavbarButtonEnhanced style={style}
               button={buttonsIOS[1]}

@@ -31,7 +31,10 @@
     "navigation",
     "bar",
     "component",
-    "customizable"
+    "customizable",
+    "navbar",
+    "nav",
+    "app"
   ],
   "author": {
     "email": "jineshshah36@gmail.com",
