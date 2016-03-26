@@ -7,7 +7,7 @@ const {
   View,
   PropTypes,
 } = React
-import styles from './styles'
+import styles from '../styles'
 
 export default class NavbarButtonEnhanced extends Component {
   static propTypes = {

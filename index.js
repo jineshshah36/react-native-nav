@@ -6,8 +6,8 @@ const {
   PropTypes,
   Platform,
 } = React
-import StatusBarEnhanced from './StatusBarEnhanced'
-import NavbarButtonEnhanced from './NavbarButtonEnhanced'
+import StatusBarEnhanced from './components/StatusBarEnhanced'
+import NavbarButtonEnhanced from './components/NavbarButtonEnhanced'
 import styles from './styles'
 
 const ButtonShape = {

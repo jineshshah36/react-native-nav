@@ -6,7 +6,7 @@ const {
   PropTypes,
   StatusBar,
 } = React
-import styles from './styles'
+import styles from '../styles'
 
 export default class StatusBarEnhanced extends Component {
 
