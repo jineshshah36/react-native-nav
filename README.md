@@ -177,7 +177,9 @@ StatusBarConfig = {
   hidden: false,
   showHideTransition: 'fade',
   backgroundColor: 'rgba(0, 0, 0, 0.2)',
-  translucent: true, // I recommend you leave this on by default and set the backgroundColor to a non-translucent color if you don't want translucency
+  translucent: true,  // I recommend you leave this true by default and
+                      // set the backgroundColor to a non-translucent
+                      // color if you don't want translucency
 }
 ```
 
