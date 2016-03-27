@@ -1,20 +1,24 @@
+/* @flow */
+import {
+  StyleSheet,
+} from 'react-native'
+
 const IOS_NAV_BAR_HEIGHT = 44
 const IOS_STATUS_BAR_HEIGHT = 20
 const ANDROID_NAV_BAR_HEIGHT = 56
 const ANDROID_STATUS_BAR_HEIGHT = 24
 
-module.exports = {
+export default StyleSheet.create({
   navBarContainer: {},
   statusBarIOS: {
     height: IOS_STATUS_BAR_HEIGHT,
-    backgroundColor: '#eee',
+    backgroundColor: '#f5f5f5',
   },
   statusBarAndroid: {
     height: ANDROID_STATUS_BAR_HEIGHT,
-    backgroundColor: '#eee',
+    backgroundColor: '#f5f5f5',
   },
   navBar: {
-    backgroundColor: '#eee',
     borderTopWidth: 0,
     borderBottomColor: 'rgba(0, 0, 0, 0.1)',
     borderBottomWidth: 1,
@@ -23,11 +27,13 @@ module.exports = {
     alignItems: 'center',
   },
   navBarIOS: {
+    backgroundColor: '#f5f5f5',
     height: IOS_NAV_BAR_HEIGHT,
     paddingLeft: 8,
     paddingRight: 8,
   },
   navBarAndroid: {
+    backgroundColor: '#f5f5f5',
     height: ANDROID_NAV_BAR_HEIGHT,
     padding: 16,
   },
@@ -40,13 +46,16 @@ module.exports = {
   navBarButtonText: {
     fontSize: 17,
     letterSpacing: 0.5,
-    color: '#999',
+    color: '#939393',
   },
   navBarTitleText: {
     fontSize: 17,
     letterSpacing: 0.5,
-    color: '#333',
+    color: '#626262',
     fontWeight: '500',
     textAlign: 'center',
   },
-}
+  buttonGroup: {
+    flexDirection: 'row',
+  },
+})

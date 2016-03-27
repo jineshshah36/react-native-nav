@@ -1,5 +1,7 @@
 ## A cross-platform (iOS / Android), fully customizable, React Native Navigation Bar component.
 
+![preview](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/react-native-nav_preview.png)
+
 ### Content
 - [Installation](#installation)
 - [Examples](#examples)
@@ -18,59 +20,34 @@ npm install --save react-native-nav
 
 ### Examples
 
-Coming soon...
+  - [iOS Light](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-light.js)
+  - [iOS Dark](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-dark.js)
+  - [iOS Colored](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-colored.js)
+  - [Android Light](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-light.js)
+  - [Android Dark](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-dark.js)
+  - [Android Colored](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-colored.js)
 
 ### Getting started
 
   - Start a new [React Native Project](https://facebook.github.io/react-native/docs/getting-started.html#content).
   - `npm install --save react-native-nav`
 
-##### ES5
+  ##### ES5
 
-```javascript
-var NavBar = require('react-native-nav')
-```
+  ```javascript
+  var NavBar = require('react-native-nav')
+  ```
 
-##### ES6 (ES2015)
+  ##### ES6 (ES2015)
 
-```javascript
-import NavBar from 'react-native-nav'
-```
+  ```javascript
+  import NavBar from 'react-native-nav'
+  ```
 
 ### API
 
 Coming soon...
 
-### Images
-
-![ios](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/Screenshot%202016-03-26%2018.31.23.png)
-
-![android](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/Screenshot%202016-03-26%2018.31.58.png)
-
 ### Questions?
 Feel free to contact me via
 - [Twitter](https://twitter.com/jineshshah36)
-
-```javascript
-style = {
-  navBarTitleText: {},
-  navBarButtonIOS: {},
-  navBarButtonAndroid: {},
-  navBarButtonTextIOS: {},
-  navBarButtonTextAndroid: {},
-  statusBarIOS: {},
-  statusBarAndroid: {},
-  navBarIOS: {},
-  navBarAndroid: {},
-  navBarContainer: {},
-}
-```
-
-```javascript
-props = {
-  style: {},
-  buttonsAndroid: [],
-  buttonsIOS: [],
-  title: ''
-}
-```
