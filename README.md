@@ -353,7 +353,7 @@ Feel free to contact me via
 
   - [Twitter](https://twitter.com/thjigs36)
   - [Medium](https://medium.com/@thejigs36)
-  - [Github](https://github.com/jineshshah36
+  - [Github](https://github.com/jineshshah36)
 
 ## License
 
