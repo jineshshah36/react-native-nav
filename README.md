@@ -6,6 +6,10 @@ I created this project after going through the navbars contained in [Awesome Rea
 
 This library of components require the use of React Native's Babel transpiler to work. If you are using the most up to date version of React Native, it should just work out of the box.
 
+![ios image](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/react-native-nav_ios-image.png)
+
+![android image](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/react-native-nav_android-image.png)
+
 ![preview](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/react-native-nav_preview.png)
 
 ### Content
