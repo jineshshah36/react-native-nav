@@ -1,6 +1,6 @@
 ## A cross-platform (iOS / Android), fully customizable, React Native Navigation Bar component.
 
-![preview](https://github.com/jineshshah36/react-native-nav/blob/new-api/examples/assets/react-native-nav-preview.png)
+![preview](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/react-native-nav_preview.png)
 
 ### Content
 - [Installation](#installation)
@@ -20,12 +20,12 @@ npm install --save react-native-nav
 
 ### Examples
 
-  - [iOS Light](https://github.com/jineshshah36/react-native-nav/tree/new-api/examples/ios-light.js)
-  - [iOS Dark](https://github.com/jineshshah36/react-native-nav/tree/new-api/examples/ios-dark.js)
-  - [iOS Colored](https://github.com/jineshshah36/react-native-nav/tree/new-api/examples/ios-colored.js)
-  - [android Light](https://github.com/jineshshah36/react-native-nav/tree/new-api/examples/android-light.js)
-  - [android Dark](https://github.com/jineshshah36/react-native-nav/tree/new-api/examples/android-dark.js)
-  - [android Colored](https://github.com/jineshshah36/react-native-nav/tree/new-api/examples/android-colored.js)
+  - [iOS Light](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-light.js)
+  - [iOS Dark](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-dark.js)
+  - [iOS Colored](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-colored.js)
+  - [android Light](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-light.js)
+  - [android Dark](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-dark.js)
+  - [android Colored](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-colored.js)
 
 ### Getting started
 
