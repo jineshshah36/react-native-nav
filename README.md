@@ -8,7 +8,7 @@ To find a preview of all examples go to the [examples](https://github.com/jinesh
 
 This library of components require the use of React Native's Babel transpiler to work. If you are using the most up to date version of React Native, it should just work out of the box.
 
-![preview](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/react-native-nav_preview.png)
+![preview](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/react-native-nav_preview_new.png)
 
 ### Content
 - [Installation](#installation)
