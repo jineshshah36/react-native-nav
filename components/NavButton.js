@@ -1,7 +1,6 @@
 import React from 'react-native'
 const {
   Platform,
-  Text,
   TouchableOpacity,
   Component,
   View,
@@ -9,17 +8,12 @@ const {
 } = React
 import styles from '../styles'
 
-export default class NavButton extends Component {
+export class NavButton extends Component {
   static propTypes = {
-    style: PropTypes.oneOfType([
-      PropTypes.object,
-      PropTypes.array,
-    ]),
+    style: View.propTypes.style,
     button: PropTypes.object,
     children: PropTypes.node,
     onPress: PropTypes.func,
-    navBarButtonTextStyle: Text.propTypes.style,
-    navBarButtonStyle: View.propTypes.style,
   }
 
   static defaultProps = {
@@ -30,36 +24,16 @@ export default class NavButton extends Component {
   }
 
   getNavBarButtonStyles(): Array {
-    const { style, navBarButtonStyle } = this.props
+    const { style } = this.props
     if (Platform.OS === 'ios') {
       return [
         styles.navBarButtonIOS,
-        style.navBarButtonIOS,
-        navBarButtonStyle,
+        style,
       ]
     } else if (Platform.OS === 'android') {
       return [
         styles.navBarButtonAndroid,
-        style.navBarButtonAndroid,
-        navBarButtonStyle,
-      ]
-    }
-    return null
-  }
-
-  getNavBarButtonTextStyles(): Array {
-    const { style, navBarButtonTextStyle } = this.props
-    if (Platform.OS === 'ios') {
-      return [
-        styles.navBarButtonText,
-        style.navBarButtonTextIOS,
-        navBarButtonTextStyle,
-      ]
-    } else if (Platform.OS === 'android') {
-      return [
-        styles.navBarButtonText,
-        style.navBarButtonTextAndroid,
-        navBarButtonTextStyle,
+        style,
       ]
     }
     return null
@@ -70,9 +44,7 @@ export default class NavButton extends Component {
     return (
       <TouchableOpacity onPress={onPress}>
         <View style={this.getNavBarButtonStyles()}>
-          <Text style={this.getNavBarButtonTextStyles()}>
-            {children}
-          </Text>
+          {children}
         </View>
       </TouchableOpacity>
     )

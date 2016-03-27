@@ -12,20 +12,18 @@ export default class StatusBarEnhanced extends Component {
 
   static propTypes = {
     statusBarTintColor: PropTypes.string,
-    statusBarIOS: PropTypes.object,
-    statusBarAndroid: PropTypes.object,
-    style: PropTypes.object,
+    statusBar: PropTypes.object,
+    style: View.propTypes.style,
   }
 
   static defaultProps = {
     statusBarTintColor: '#fff',
     style: {},
-    statusBarIOS: {},
-    statusBarAndroid: {},
+    statusBar: {},
   }
 
   getConfig(): Object {
-    const { statusBarIOS, statusBarAndroid } = this.props
+    const { statusBar } = this.props
     if (Platform.OS === 'ios') {
       const statusBarConfig = {
         animated: true,
@@ -34,7 +32,7 @@ export default class StatusBarEnhanced extends Component {
         networkActivityIndicatorVisible: true,
         showHideTransition: 'fade',
       }
-      return Object.assign({}, statusBarConfig, statusBarIOS)
+      return Object.assign({}, statusBarConfig, statusBar)
     } else if (Platform.OS === 'android') {
       const statusBarConfig = {
         animated: true,
@@ -43,7 +41,7 @@ export default class StatusBarEnhanced extends Component {
         backgroundColor: 'rgba(0, 0, 0, 0.25)',
         translucent: true,
       }
-      return Object.assign({}, statusBarConfig, statusBarAndroid)
+      return Object.assign({}, statusBarConfig, statusBar)
     }
     return null
   }
@@ -53,12 +51,12 @@ export default class StatusBarEnhanced extends Component {
     if (Platform.OS === 'ios') {
       return [
         styles.statusBarIOS,
-        style.statusBarIOS,
+        style,
       ]
     } else if (Platform.OS === 'android') {
       return [
         styles.statusBarAndroid,
-        style.statusBarAndroid,
+        style,
       ]
     }
     return null
@@ -66,9 +64,8 @@ export default class StatusBarEnhanced extends Component {
 
   render(): React.Element {
     const config: Object = this.getConfig()
-    const stylesConfig: Array = this.getStyles()
     return (
-      <View style={stylesConfig}>
+      <View style={this.getStyles()}>
         <StatusBar {...config} />
       </View>
     )

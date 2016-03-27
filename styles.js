@@ -3,7 +3,7 @@ const IOS_STATUS_BAR_HEIGHT = 20
 const ANDROID_NAV_BAR_HEIGHT = 56
 const ANDROID_STATUS_BAR_HEIGHT = 24
 
-module.exports = {
+export default {
   navBarContainer: {},
   statusBarIOS: {
     height: IOS_STATUS_BAR_HEIGHT,
@@ -14,7 +14,6 @@ module.exports = {
     backgroundColor: '#eee',
   },
   navBar: {
-    backgroundColor: '#eee',
     borderTopWidth: 0,
     borderBottomColor: 'rgba(0, 0, 0, 0.1)',
     borderBottomWidth: 1,
@@ -23,11 +22,13 @@ module.exports = {
     alignItems: 'center',
   },
   navBarIOS: {
+    backgroundColor: '#eee',
     height: IOS_NAV_BAR_HEIGHT,
     paddingLeft: 8,
     paddingRight: 8,
   },
   navBarAndroid: {
+    backgroundColor: '#eee',
     height: ANDROID_NAV_BAR_HEIGHT,
     padding: 16,
   },
@@ -40,13 +41,16 @@ module.exports = {
   navBarButtonText: {
     fontSize: 17,
     letterSpacing: 0.5,
-    color: '#999',
+    color: '#607D8B',
   },
   navBarTitleText: {
     fontSize: 17,
     letterSpacing: 0.5,
-    color: '#333',
+    color: '#263238',
     fontWeight: '500',
     textAlign: 'center',
+  },
+  buttonGroup: {
+    flexDirection: 'row',
   },
 }

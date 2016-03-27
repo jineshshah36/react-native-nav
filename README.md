@@ -50,27 +50,3 @@ Coming soon...
 ### Questions?
 Feel free to contact me via
 - [Twitter](https://twitter.com/jineshshah36)
-
-```javascript
-style = {
-  navBarTitleText: {},
-  navBarButtonIOS: {},
-  navBarButtonAndroid: {},
-  navBarButtonTextIOS: {},
-  navBarButtonTextAndroid: {},
-  statusBarIOS: {},
-  statusBarAndroid: {},
-  navBarIOS: {},
-  navBarAndroid: {},
-  navBarContainer: {},
-}
-```
-
-```javascript
-props = {
-  style: {},
-  buttonsAndroid: [],
-  buttonsIOS: [],
-  title: ''
-}
-```
