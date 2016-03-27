@@ -55,7 +55,7 @@ export default StyleSheet.create({
     fontWeight: '500',
     textAlign: 'center',
   },
-  buttonGroup: {
+  navGroup: {
     flexDirection: 'row',
   },
 })

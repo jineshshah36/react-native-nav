@@ -55,7 +55,7 @@ export default class NavBarIOSLight extends Component {
 
 ```javascript
 import React, { Component } from 'react-native'
-import NavBar, { ButtonGroup, NavButton, NavButtonText, NavTitle } from 'react-native-nav'
+import NavBar, { NavGroup, NavButton, NavButtonText, NavTitle } from 'react-native-nav'
 
 export default class NavBarAndroidLight extends Component {
   render() {
@@ -64,7 +64,7 @@ export default class NavBarAndroidLight extends Component {
         <NavTitle>
           {"App"}
         </NavTitle>
-        <ButtonGroup>
+        <NavGroup>
           <NavButton>
             <NavButtonText>
               {"Button"}
@@ -80,7 +80,7 @@ export default class NavBarAndroidLight extends Component {
               {"Button"}
             </NavButtonText>
           </NavButton>
-        </ButtonGroup>
+        </NavGroup>
       </NavBar>
     )
   }

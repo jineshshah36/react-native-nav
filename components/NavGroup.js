@@ -6,7 +6,7 @@ const {
 } = React
 import styles from '../styles'
 
-export class ButtonGroup extends Component {
+export class NavGroup extends Component {
   static propTypes = {
     style: View.propTypes.style,
     children: PropTypes.node,
@@ -19,7 +19,7 @@ export class ButtonGroup extends Component {
   render(): React.Element {
     const { style, children } = this.props
     return (
-      <View style={[styles.buttonGroup, style]}>
+      <View style={[styles.navGroup, style]}>
         {children}
       </View>
     )

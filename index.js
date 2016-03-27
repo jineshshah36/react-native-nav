@@ -6,7 +6,7 @@ const {
   Platform,
 } = React
 import StatusBarEnhanced from './components/StatusBarEnhanced'
-export { ButtonGroup } from './components/ButtonGroup'
+export { NavGroup } from './components/NavGroup'
 export { NavButton } from './components/NavButton'
 export { NavButtonText } from './components/NavButtonText'
 export { NavTitle } from './components/NavTitle'

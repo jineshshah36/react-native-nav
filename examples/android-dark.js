@@ -1,5 +1,5 @@
 import React, { Component } from 'react-native'
-import NavBar, { ButtonGroup, NavButton, NavButtonText, NavTitle } from 'react-native-nav'
+import NavBar, { NavGroup, NavButton, NavButtonText, NavTitle } from 'react-native-nav'
 
 const styles = StyleSheet.create({
   statusBar: {
@@ -23,7 +23,7 @@ export default class NavBarAndroidDark extends Component {
         <NavTitle style={styles.title}>
           {"App"}
         </NavTitle>
-        <ButtonGroup>
+        <NavGroup>
           <NavButton>
             <NavButtonText style={styles.buttonText}>
               {"Button"}
@@ -39,7 +39,7 @@ export default class NavBarAndroidDark extends Component {
               {"Button"}
             </NavButtonText>
           </NavButton>
-        </ButtonGroup>
+        </NavGroup>
       </NavBar>
     )
   }
