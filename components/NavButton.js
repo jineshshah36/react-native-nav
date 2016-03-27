@@ -11,16 +11,12 @@ import styles from '../styles'
 export class NavButton extends Component {
   static propTypes = {
     style: View.propTypes.style,
-    button: PropTypes.object,
     children: PropTypes.node,
     onPress: PropTypes.func,
   }
 
   static defaultProps = {
     style: {},
-    button: {
-      title: '',
-    },
   }
 
   getNavBarButtonStyles(): Array {
