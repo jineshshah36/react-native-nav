@@ -1,6 +1,6 @@
 ## A cross-platform (iOS / Android), fully customizable, React Native Navigation Bar component.
 
-![preview](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/react-native-nav-preview.png)
+![preview](https://github.com/jineshshah36/react-native-nav/blob/new-api/examples/assets/react-native-nav-preview.png)
 
 ### Content
 - [Installation](#installation)
