@@ -38,7 +38,7 @@ export default class StatusBarEnhanced extends Component {
         animated: true,
         hidden: false,
         showHideTransition: 'fade',
-        backgroundColor: 'rgba(0, 0, 0, 0.25)',
+        backgroundColor: 'rgba(0, 0, 0, 0.2)',
         translucent: true,
       }
       return Object.assign({}, statusBarConfig, statusBar)

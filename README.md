@@ -1,5 +1,7 @@
 ## A cross-platform (iOS / Android), fully customizable, React Native Navigation Bar component.
 
+![preview](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/react-native-nav-preview.png)
+
 ### Content
 - [Installation](#installation)
 - [Examples](#examples)
@@ -18,7 +20,12 @@ npm install --save react-native-nav
 
 ### Examples
 
-Coming soon...
+  - [iOS Light](https://github.com/jineshshah36/react-native-nav/tree/new-api/examples/ios-light.js)
+  - [iOS Dark](https://github.com/jineshshah36/react-native-nav/tree/new-api/examples/ios-dark.js)
+  - [iOS Colored](https://github.com/jineshshah36/react-native-nav/tree/new-api/examples/ios-colored.js)
+  - [android Light](https://github.com/jineshshah36/react-native-nav/tree/new-api/examples/android-light.js)
+  - [android Dark](https://github.com/jineshshah36/react-native-nav/tree/new-api/examples/android-dark.js)
+  - [android Colored](https://github.com/jineshshah36/react-native-nav/tree/new-api/examples/android-colored.js)
 
 ### Getting started
 
@@ -40,12 +47,6 @@ import NavBar from 'react-native-nav'
 ### API
 
 Coming soon...
-
-### Images
-
-![ios](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/Screenshot%202016-03-26%2018.31.23.png)
-
-![android](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/Screenshot%202016-03-26%2018.31.58.png)
 
 ### Questions?
 Feel free to contact me via
