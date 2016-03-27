@@ -2,6 +2,8 @@
 
 I created this project after going through the navbars contained in [Awesome React](https://github.com/jondot/awesome-react-native) and not finding any that were cross-platform, customizable, and integrated the status bar. This project is a spiritual successor to [react-native-navbar](https://github.com/react-native-fellowship/react-native-navbar) (I forked it and ended up changing like 90% of it).
 
+To find a preview of all examples go to the [examples](https://github.com/jineshshah36/react-native-nav/tree/master/examples) folder.
+
 **Note**
 
 This library of components require the use of React Native's Babel transpiler to work. If you are using the most up to date version of React Native, it should just work out of the box.
