@@ -99,5 +99,9 @@ Coming soon...
   - [Android Colored](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-colored.js)
 
 ### Questions?
+
 Feel free to contact me via
-- [Twitter](https://twitter.com/jineshshah36)
+
+  - [Twitter](https://twitter.com/thjigs36)
+  - [Medium](https://medium.com/@thejigs36)
+  - [Github](https://github.com/jineshshah36)
