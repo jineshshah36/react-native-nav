@@ -93,6 +93,8 @@ Coming soon...
 
 ### Examples
 
+To find a preview of all examples go to the [examples](https://github.com/jineshshah36/react-native-nav/tree/master/examples) folder.
+
   - [iOS Light](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-light.js)
   - [iOS Dark](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-dark.js)
   - [iOS Colored](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-colored.js)
