@@ -4,11 +4,9 @@
 
 ### Content
 - [Installation](#installation)
-- [Examples](#examples)
 - [Getting started](#getting-started)
 - [API](#api)
-- [Images](#images)
-- [Usage with webpack](#usage-with-webpack)
+- [Examples](#examples)
 - [Questions?](#questions)
 
 ### Installation
@@ -18,6 +16,82 @@ First of all, make sure you're using `npm3+` and `babel6` for version `1.1.1` or
 npm install --save react-native-nav
 ```
 
+### Getting started
+
+Start a new [React Native Project](https://facebook.github.io/react-native/docs/getting-started.html#content). Then, `npm install --save react-native-nav`.
+
+##### ES6 (ES2015)
+
+```javascript
+import React, {
+  Component,
+} from 'react-native'
+import NavBar, {
+  NavButton,
+  NavButtonText,
+  NavTitle,
+} from 'react-native-nav'
+
+export default class NavBarIOSLight extends Component {
+  render() {
+    return (
+      <NavBar>
+        <NavButton>
+          <NavButtonText>
+            {"Button"}
+          </NavButtonText>
+        </NavButton>
+        <NavTitle>
+          {"App"}
+        </NavTitle>
+        <NavButton>
+          <NavButtonText>
+            {"Button"}
+          </NavButtonText>
+        </NavButton>
+      </NavBar>
+    )
+  }
+}
+```
+
+##### ES5
+
+```javascript
+var React = require('react-native');
+var reactNativeNav = require('react-native-nav')
+var NavBar = reactNativeNav.default
+var NavButton = reactNativeNav.NavButton
+var NavButtonText = reactNativeNav.NavButtonText
+var NavTitle = reactNativeNav.NavTitle
+
+module.exports = React.createClass({
+  render: function() {
+    return (
+      <NavBar>
+        <NavButton>
+          <NavButtonText>
+            {"Button"}
+          </NavButtonText>
+        </NavButton>
+        <NavTitle>
+          {"App"}
+        </NavTitle>
+        <NavButton>
+          <NavButtonText>
+            {"Button"}
+          </NavButtonText>
+        </NavButton>
+      </NavBar>
+    )
+  }
+})
+```
+
+### API
+
+Coming soon...
+
 ### Examples
 
   - [iOS Light](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-light.js)
@@ -26,27 +100,6 @@ npm install --save react-native-nav
   - [Android Light](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-light.js)
   - [Android Dark](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-dark.js)
   - [Android Colored](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-colored.js)
-
-### Getting started
-
-  - Start a new [React Native Project](https://facebook.github.io/react-native/docs/getting-started.html#content).
-  - `npm install --save react-native-nav`
-
-  ##### ES5
-
-  ```javascript
-  var NavBar = require('react-native-nav')
-  ```
-
-  ##### ES6 (ES2015)
-
-  ```javascript
-  import NavBar from 'react-native-nav'
-  ```
-
-### API
-
-Coming soon...
 
 ### Questions?
 Feel free to contact me via
