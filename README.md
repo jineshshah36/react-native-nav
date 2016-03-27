@@ -1,5 +1,7 @@
 ## A cross-platform (iOS / Android), fully customizable, React Native Navigation Bar component.
 
+I created this project after going through the navbars contained in [Awesome React](https://github.com/jondot/awesome-react-native) and not finding any that were cross-platform, customizable, and integrated the status bar. This project is a spiritual successor to [react-native-navbar](https://github.com/react-native-fellowship/react-native-navbar) (I forked it and ended up changing like 90% of it).
+
 ![preview](https://github.com/jineshshah36/react-native-nav/blob/master/examples/assets/react-native-nav_preview.png)
 
 ### Content
