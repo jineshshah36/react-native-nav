@@ -23,9 +23,9 @@ npm install --save react-native-nav
   - [iOS Light](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-light.js)
   - [iOS Dark](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-dark.js)
   - [iOS Colored](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-colored.js)
-  - [android Light](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-light.js)
-  - [android Dark](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-dark.js)
-  - [android Colored](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-colored.js)
+  - [Android Light](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-light.js)
+  - [Android Dark](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-dark.js)
+  - [Android Colored](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-colored.js)
 
 ### Getting started
 
