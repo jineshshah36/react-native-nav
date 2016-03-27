@@ -32,17 +32,17 @@ npm install --save react-native-nav
   - Start a new [React Native Project](https://facebook.github.io/react-native/docs/getting-started.html#content).
   - `npm install --save react-native-nav`
 
-##### ES5
+  ##### ES5
 
-```javascript
-var NavBar = require('react-native-nav')
-```
+  ```javascript
+  var NavBar = require('react-native-nav')
+  ```
 
-##### ES6 (ES2015)
+  ##### ES6 (ES2015)
 
-```javascript
-import NavBar from 'react-native-nav'
-```
+  ```javascript
+  import NavBar from 'react-native-nav'
+  ```
 
 ### API
 
