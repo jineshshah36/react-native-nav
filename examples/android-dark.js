@@ -1,13 +1,5 @@
-import React, {
-  Component,
-  StyleSheet,
-} from 'react-native'
-import NavBar, {
-  ButtonGroup,
-  NavButton,
-  NavButtonText,
-  NavTitle,
-} from 'react-native-nav'
+import React, { Component } from 'react-native'
+import NavBar, { ButtonGroup, NavButton, NavButtonText, NavTitle } from 'react-native-nav'
 
 const styles = StyleSheet.create({
   statusBar: {

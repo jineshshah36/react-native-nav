@@ -20,17 +20,11 @@ npm install --save react-native-nav
 
 Start a new [React Native Project](https://facebook.github.io/react-native/docs/getting-started.html#content). Then, `npm install --save react-native-nav`.
 
-##### ES6 (ES2015)
+##### iOS
 
 ```javascript
-import React, {
-  Component,
-} from 'react-native'
-import NavBar, {
-  NavButton,
-  NavButtonText,
-  NavTitle,
-} from 'react-native-nav'
+import React, { Component } from 'react-native'
+import NavBar, { NavButton, NavButtonText, NavTitle } from 'react-native-nav'
 
 export default class NavBarIOSLight extends Component {
   render() {
@@ -55,37 +49,40 @@ export default class NavBarIOSLight extends Component {
 }
 ```
 
-##### ES5
+##### Android
 
 ```javascript
-var React = require('react-native');
-var reactNativeNav = require('react-native-nav')
-var NavBar = reactNativeNav.default
-var NavButton = reactNativeNav.NavButton
-var NavButtonText = reactNativeNav.NavButtonText
-var NavTitle = reactNativeNav.NavTitle
+import React, { Component } from 'react-native'
+import NavBar, { ButtonGroup, NavButton, NavButtonText, NavTitle } from 'react-native-nav'
 
-module.exports = React.createClass({
-  render: function() {
+export default class NavBarAndroidLight extends Component {
+  render() {
     return (
       <NavBar>
-        <NavButton>
-          <NavButtonText>
-            {"Button"}
-          </NavButtonText>
-        </NavButton>
         <NavTitle>
           {"App"}
         </NavTitle>
-        <NavButton>
-          <NavButtonText>
-            {"Button"}
-          </NavButtonText>
-        </NavButton>
+        <ButtonGroup>
+          <NavButton>
+            <NavButtonText>
+              {"Button"}
+            </NavButtonText>
+          </NavButton>
+          <NavButton>
+            <NavButtonText>
+              {"Button"}
+            </NavButtonText>
+          </NavButton>
+          <NavButton>
+            <NavButtonText>
+              {"Button"}
+            </NavButtonText>
+          </NavButton>
+        </ButtonGroup>
       </NavBar>
     )
   }
-})
+}
 ```
 
 ### API
