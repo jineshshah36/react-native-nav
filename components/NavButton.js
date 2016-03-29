@@ -3,25 +3,14 @@ import React from 'react-native'
 const {
   Platform,
   TouchableOpacity,
-  Component,
   View,
   PropTypes,
 } = React
 import styles from '../styles'
 
-export class NavButton extends Component {
-  static propTypes = {
-    style: View.propTypes.style,
-    children: PropTypes.node,
-    onPress: PropTypes.func,
-  }
-
-  static defaultProps = {
-    style: {},
-  }
-
-  getNavBarButtonStyles(): Array {
-    const { style } = this.props
+function NavButton(props: Object): React.Element {
+  const getNavBarButtonStyles = (): Array<Object> => {
+    const { style } = props
     if (Platform.OS === 'ios') {
       return [
         styles.navBarButtonIOS,
@@ -33,21 +22,31 @@ export class NavButton extends Component {
         style,
       ]
     }
-    return null
+    return []
   }
 
-  getTouchable(): React.Element {
-    const { onPress, children } = this.props
+  const getTouchable = (): React.Element => {
+    const { onPress, children } = props
     return (
       <TouchableOpacity onPress={onPress}>
-        <View style={this.getNavBarButtonStyles()}>
+        <View style={getNavBarButtonStyles}>
           {children}
         </View>
       </TouchableOpacity>
     )
   }
 
-  render(): React.Element {
-    return this.getTouchable()
-  }
+  return getTouchable
 }
+
+NavButton.propTypes = {
+  style: View.propTypes.style,
+  children: PropTypes.node,
+  onPress: PropTypes.func,
+}
+
+NavButton.defaultProps = {
+  style: {},
+}
+
+export { NavButton }
