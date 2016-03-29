@@ -351,7 +351,7 @@ To find a preview of all examples go to the [examples](https://github.com/jinesh
 
 Feel free to contact me via
 
-  - [Twitter](https://twitter.com/thjigs36)
+  - [Twitter](https://twitter.com/thejigs36)
   - [Medium](https://medium.com/@thejigs36)
   - [Github](https://github.com/jineshshah36)
 
