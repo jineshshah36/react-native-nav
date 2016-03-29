@@ -1,29 +1,10 @@
 /* @flow */
 import React from 'react-native'
-const {
-  Platform,
-  Component,
-  View,
-  PropTypes,
-  StatusBar,
-} = React
+const { Platform, View, PropTypes, StatusBar } = React
 import styles from '../styles'
 
-export default class StatusBarEnhanced extends Component {
-
-  static propTypes = {
-    statusBarTintColor: PropTypes.string,
-    statusBar: PropTypes.object,
-    style: View.propTypes.style,
-  }
-
-  static defaultProps = {
-    statusBarTintColor: '#fff',
-    style: {},
-    statusBar: {},
-  }
-
-  getConfig(): Object {
+function StatusBarEnhanced(props: Object): React.Element {
+  const getConfig = (): Object => {
     const { statusBar } = this.props
     if (Platform.OS === 'ios') {
       const statusBarConfig = {
@@ -47,7 +28,7 @@ export default class StatusBarEnhanced extends Component {
     return null
   }
 
-  getStyles(): Array {
+  const getStyles = (): Array => {
     const { style } = this.props
     if (Platform.OS === 'ios') {
       return [
@@ -63,12 +44,23 @@ export default class StatusBarEnhanced extends Component {
     return null
   }
 
-  render(): React.Element {
-    const config: Object = this.getConfig()
-    return (
-      <View style={this.getStyles()}>
-        <StatusBar {...config} />
-      </View>
-    )
-  }
+  return (
+    <View style={getStyles}>
+      <StatusBar {...getConfig} />
+    </View>
+  )
 }
+
+StatusBarEnhanced.propTypes = {
+  statusBarTintColor: PropTypes.string,
+  statusBar: PropTypes.object,
+  style: View.propTypes.style,
+}
+
+StatusBarEnhanced.defaultProps = {
+  statusBarTintColor: '#fff',
+  style: {},
+  statusBar: {},
+}
+
+export { StatusBarEnhanced }

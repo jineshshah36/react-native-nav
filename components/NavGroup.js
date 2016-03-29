@@ -1,28 +1,24 @@
 /* @flow */
 import React from 'react-native'
-const {
-  View,
-  Component,
-  PropTypes,
-} = React
+const { View, PropTypes } = React
 import styles from '../styles'
 
-export class NavGroup extends Component {
-  static propTypes = {
-    style: View.propTypes.style,
-    children: PropTypes.node,
-  }
-
-  static defaultProps = {
-    style: {},
-  }
-
-  render(): React.Element {
-    const { style, children } = this.props
-    return (
-      <View style={[styles.navGroup, style]}>
-        {children}
-      </View>
-    )
-  }
+function NavGroup(props: Object): React.Element {
+  const { style, children } = props
+  return (
+    <View style={[styles.navGroup, style]}>
+      {children}
+    </View>
+  )
 }
+
+NavGroup.propTypes = {
+  style: View.propTypes.style,
+  children: PropTypes.node,
+}
+
+NavGroup.defaultProps = {
+  style: {},
+}
+
+export { NavGroup }

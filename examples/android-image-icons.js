@@ -17,6 +17,12 @@ const styles = StyleSheet.create({
   navGroup: {
     justifyContent: 'flex-end',
   },
+  navButton: {
+    flex: 1,
+  },
+  image: {
+    width: 30,
+  },
 })
 
 export default class NavBarAndroidColored extends Component {
@@ -27,14 +33,14 @@ export default class NavBarAndroidColored extends Component {
           {"App"}
         </NavTitle>
         <NavGroup style={styles.navGroup}>
-          <NavButton style={{ flex: 1 }}>
-            <Image style={{ width: 30 }}
+          <NavButton style={styles.navButton}>
+            <Image style={styles.width}
               resizeMode={"contain"}
               source={require('./shared/static/new-interface_cart.png')}
             />
           </NavButton>
-          <NavButton style={{ flex: 1 }}>
-            <Image style={{ width: 30 }}
+          <NavButton style={styles.navButton}>
+            <Image style={styles.width}
               resizeMode={"contain"}
               source={require('./shared/static/new-interface_search.png')}
             />

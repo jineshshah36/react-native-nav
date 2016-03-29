@@ -1,11 +1,6 @@
 /* @flow */
 import React from 'react-native'
-const {
-  Platform,
-  TouchableOpacity,
-  View,
-  PropTypes,
-} = React
+const { Platform, TouchableOpacity, View, PropTypes } = React
 import styles from '../styles'
 
 function NavButton(props: Object): React.Element {
@@ -40,9 +35,9 @@ function NavButton(props: Object): React.Element {
 }
 
 NavButton.propTypes = {
-  style: View.propTypes.style,
   children: PropTypes.node,
   onPress: PropTypes.func,
+  style: View.propTypes.style,
 }
 
 NavButton.defaultProps = {

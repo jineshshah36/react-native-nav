@@ -1,28 +1,24 @@
 /* @flow */
 import React from 'react-native'
-const {
-  Text,
-  Component,
-  PropTypes,
-} = React
+const { Text, PropTypes } = React
 import styles from '../styles'
 
-export class NavTitle extends Component {
-  static propTypes = {
-    style: Text.propTypes.style,
-    children: PropTypes.node,
-  }
-
-  static defaultProps = {
-    style: {},
-  }
-
-  render(): React.Element {
-    const { style, children } = this.props
-    return (
-      <Text style={[styles.navBarTitleText, style]}>
-        {children}
-      </Text>
-    )
-  }
+function NavTitle(props: Object): React.Element {
+  const { style, children } = props
+  return (
+    <Text style={[styles.navBarTitleText, style]}>
+      {children}
+    </Text>
+  )
 }
+
+NavTitle.propTypes = {
+  style: Text.propTypes.style,
+  children: PropTypes.node,
+}
+
+NavTitle.defaultProps = {
+  style: {},
+}
+
+export { NavTitle }

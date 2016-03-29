@@ -343,9 +343,11 @@ To find a preview of all examples go to the [examples](https://github.com/jinesh
   - [iOS Light](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-light.js)
   - [iOS Dark](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-dark.js)
   - [iOS Colored](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-colored.js)
+  - [iOS Icons Buttons](https://github.com/jineshshah36/react-native-nav/tree/master/examples/ios-image-icons.js)
   - [Android Light](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-light.js)
   - [Android Dark](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-dark.js)
   - [Android Colored](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-colored.js)
+  - [Android Icons Buttons](https://github.com/jineshshah36/react-native-nav/tree/master/examples/android-image-icons.js)
 
 ### Questions?
 
