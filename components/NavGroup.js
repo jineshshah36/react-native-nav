@@ -3,8 +3,7 @@ import React from 'react-native'
 const { View, PropTypes } = React
 import styles from '../styles'
 
-function NavGroup(props: Object): React.Element {
-  const { style, children } = props
+function NavGroup({ style, children }: Object): React.Element {
   return (
     <View style={[styles.navGroup, style]}>
       {children}

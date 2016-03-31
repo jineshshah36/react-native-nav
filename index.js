@@ -1,33 +1,19 @@
 /* @flow */
 import React from 'react-native'
 const {
-  Component,
   View,
   PropTypes,
   Platform,
 } = React
-import StatusBarEnhanced from './components/StatusBarEnhanced'
+import { StatusBarEnhanced } from './components/StatusBarEnhanced'
 export { NavGroup } from './components/NavGroup'
 export { NavButton } from './components/NavButton'
 export { NavButtonText } from './components/NavButtonText'
 export { NavTitle } from './components/NavTitle'
 import styles from './styles'
 
-class NavigationBar extends Component {
-
-  static propTypes = {
-    statusBar: PropTypes.object,
-    style: PropTypes.object,
-    children: PropTypes.node,
-  }
-
-  static defaultProps = {
-    style: {},
-    statusBar: {},
-  }
-
-  getNavBar(): React.Element {
-    const { style, children } = this.props
+function NavigationBar({ style, children, statusBar }: Object): React.Element {
+  const getNavBar = (): React.Element => {
     if (Platform.OS === 'ios') {
       return (
         <View style={[styles.navBar, styles.navBarIOS, style.navBar]}>
@@ -44,17 +30,25 @@ class NavigationBar extends Component {
     return null
   }
 
-  render(): React.Element {
-    const { style, statusBar } = this.props
-    return (
-      <View style={[styles.navBarContainer, style.navBarContainer]}>
-        <StatusBarEnhanced style={style.statusBar}
-          statusBar={statusBar}
-        />
-        {this.getNavBar()}
-      </View>
-    )
-  }
+  return (
+    <View style={[styles.navBarContainer, style.navBarContainer]}>
+      <StatusBarEnhanced style={style.statusBar}
+        statusBar={statusBar}
+      />
+      {getNavBar()}
+    </View>
+  )
+}
+
+NavigationBar.propTypes = {
+  statusBar: PropTypes.object,
+  style: PropTypes.object,
+  children: PropTypes.node,
+}
+
+NavigationBar.defaultProps = {
+  style: {},
+  statusBar: {},
 }
 
 export default NavigationBar

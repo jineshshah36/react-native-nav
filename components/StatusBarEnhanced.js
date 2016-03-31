@@ -3,9 +3,8 @@ import React from 'react-native'
 const { Platform, View, PropTypes, StatusBar } = React
 import styles from '../styles'
 
-function StatusBarEnhanced(props: Object): React.Element {
+function StatusBarEnhanced({ statusBar, style }: Object): React.Element {
   const getConfig = (): Object => {
-    const { statusBar } = this.props
     if (Platform.OS === 'ios') {
       const statusBarConfig = {
         animated: true,
@@ -25,11 +24,10 @@ function StatusBarEnhanced(props: Object): React.Element {
       }
       return Object.assign({}, statusBarConfig, statusBar)
     }
-    return null
+    return {}
   }
 
-  const getStyles = (): Array => {
-    const { style } = this.props
+  const getStyles = (): Array<Object> => {
     if (Platform.OS === 'ios') {
       return [
         styles.statusBarIOS,
@@ -41,24 +39,22 @@ function StatusBarEnhanced(props: Object): React.Element {
         style,
       ]
     }
-    return null
+    return [{}]
   }
 
   return (
-    <View style={getStyles}>
-      <StatusBar {...getConfig} />
+    <View style={getStyles()}>
+      <StatusBar {...getConfig()} />
     </View>
   )
 }
 
 StatusBarEnhanced.propTypes = {
-  statusBarTintColor: PropTypes.string,
   statusBar: PropTypes.object,
   style: View.propTypes.style,
 }
 
 StatusBarEnhanced.defaultProps = {
-  statusBarTintColor: '#fff',
   style: {},
   statusBar: {},
 }
