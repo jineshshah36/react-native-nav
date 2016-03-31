@@ -4,24 +4,16 @@ const { Platform, TouchableOpacity, View, PropTypes } = React
 import styles from '../styles'
 
 function NavButton({ style, onPress, children }: Object): React.Element {
-  const getNavBarButtonStyles = (): Array<Object> => {
-    if (Platform.OS === 'ios') {
-      return [
-        styles.navBarButtonIOS,
-        style,
-      ]
-    } else if (Platform.OS === 'android') {
-      return [
-        styles.navBarButtonAndroid,
-        style,
-      ]
-    }
-    return []
+  let navBarStyles = []
+  if (Platform.OS === 'ios') {
+    navBarStyles = [styles.navBarButtonIOS, style]
+  } else if (Platform.OS === 'android') {
+    navBarStyles = [styles.navBarButtonAndroid, style]
   }
 
   const getTouchable = () => (
     <TouchableOpacity onPress={onPress}>
-      <View style={getNavBarButtonStyles()}>
+      <View style={navBarStyles}>
         {children}
       </View>
     </TouchableOpacity>

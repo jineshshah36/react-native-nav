@@ -13,21 +13,19 @@ export { NavTitle } from './components/NavTitle'
 import styles from './styles'
 
 function NavigationBar({ style, children, statusBar }: Object): React.Element {
-  const getNavBar = (): React.Element => {
-    if (Platform.OS === 'ios') {
-      return (
-        <View style={[styles.navBar, styles.navBarIOS, style.navBar]}>
-          {children}
-        </View>
-      )
-    } else if (Platform.OS === 'android') {
-      return (
-        <View style={[styles.navBar, styles.navBarAndroid, style.navBar]}>
-          {children}
-        </View>
-      )
-    }
-    return null
+  let navBar = null
+  if (Platform.OS === 'ios') {
+    navBar = (
+      <View style={[styles.navBar, styles.navBarIOS, style.navBar]}>
+        {children}
+      </View>
+    )
+  } else if (Platform.OS === 'android') {
+    navBar = (
+      <View style={[styles.navBar, styles.navBarAndroid, style.navBar]}>
+        {children}
+      </View>
+    )
   }
 
   return (
@@ -35,7 +33,7 @@ function NavigationBar({ style, children, statusBar }: Object): React.Element {
       <StatusBarEnhanced style={style.statusBar}
         statusBar={statusBar}
       />
-      {getNavBar()}
+      {navBar}
     </View>
   )
 }
