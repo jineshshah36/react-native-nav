@@ -1,30 +1,10 @@
 /* @flow */
 import React from 'react-native'
-const {
-  Platform,
-  Component,
-  View,
-  PropTypes,
-  StatusBar,
-} = React
+const { Platform, View, PropTypes, StatusBar } = React
 import styles from '../styles'
 
-export default class StatusBarEnhanced extends Component {
-
-  static propTypes = {
-    statusBarTintColor: PropTypes.string,
-    statusBar: PropTypes.object,
-    style: View.propTypes.style,
-  }
-
-  static defaultProps = {
-    statusBarTintColor: '#fff',
-    style: {},
-    statusBar: {},
-  }
-
-  getConfig(): Object {
-    const { statusBar } = this.props
+function StatusBarEnhanced({ statusBar, style }: Object): React.Element {
+  const getConfig = (): Object => {
     if (Platform.OS === 'ios') {
       const statusBarConfig = {
         animated: true,
@@ -44,11 +24,10 @@ export default class StatusBarEnhanced extends Component {
       }
       return Object.assign({}, statusBarConfig, statusBar)
     }
-    return null
+    return {}
   }
 
-  getStyles(): Array {
-    const { style } = this.props
+  const getStyles = (): Array<Object> => {
     if (Platform.OS === 'ios') {
       return [
         styles.statusBarIOS,
@@ -60,15 +39,24 @@ export default class StatusBarEnhanced extends Component {
         style,
       ]
     }
-    return null
+    return [{}]
   }
 
-  render(): React.Element {
-    const config: Object = this.getConfig()
-    return (
-      <View style={this.getStyles()}>
-        <StatusBar {...config} />
-      </View>
-    )
-  }
+  return (
+    <View style={getStyles()}>
+      <StatusBar {...getConfig()} />
+    </View>
+  )
 }
+
+StatusBarEnhanced.propTypes = {
+  statusBar: PropTypes.object,
+  style: View.propTypes.style,
+}
+
+StatusBarEnhanced.defaultProps = {
+  style: {},
+  statusBar: {},
+}
+
+export { StatusBarEnhanced }

@@ -14,14 +14,20 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'rgba(231, 37, 156, 0.5)',
   },
+  navButton: {
+    flex: 1,
+  },
+  image: {
+    width: 30,
+  },
 })
 
 export default class NavBarIOSColored extends Component {
   render() {
     return (
       <NavBar style={styles}>
-        <NavButton style={{ flex: 1 }}>
-          <Image style={{ width: 30 }}
+        <NavButton style={styles.navButton}>
+          <Image style={styles.image}
             resizeMode={"contain"}
             source={require('./shared/static/new-interface_cart.png')}
           />
@@ -29,8 +35,8 @@ export default class NavBarIOSColored extends Component {
         <NavTitle style={styles.title}>
           {"App"}
         </NavTitle>
-        <NavButton style={{ flex: 1 }}>
-          <Image style={{ width: 30 }}
+        <NavButton style={styles.navButton}>
+          <Image style={styles.image}
             resizeMode={"contain"}
             source={require('./shared/static/new-interface_search.png')}
           />
