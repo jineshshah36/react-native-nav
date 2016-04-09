@@ -10,7 +10,7 @@ function StatusBarEnhanced({ statusBar, style }: Object): React.Element {
       animated: true,
       hidden: false,
       barStyle: 'default',
-      networkActivityIndicatorVisible: true,
+      networkActivityIndicatorVisible: false,
       showHideTransition: 'fade',
     }
   } else if (Platform.OS === 'android') {

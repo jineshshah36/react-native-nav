@@ -171,7 +171,7 @@ StatusBarConfig = {
   animated: true,
   hidden: false,
   barStyle: 'default',
-  networkActivityIndicatorVisible: true,
+  networkActivityIndicatorVisible: false,
   showHideTransition: 'fade',
 
   // default Android configuration:
