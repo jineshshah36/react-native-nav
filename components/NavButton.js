@@ -43,7 +43,7 @@ NavButton.propTypes = {
   onPress: PropTypes.func,
   style: View.propTypes.style,
   disabled: PropTypes.bool,
-  disabledStyle: View.PropTypes.style,
+  disabledStyle: View.propTypes.style,
 }
 
 NavButton.defaultProps = {
