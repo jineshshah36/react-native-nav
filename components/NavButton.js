@@ -3,21 +3,37 @@ import React from 'react-native'
 const { Platform, TouchableOpacity, View, PropTypes } = React
 import styles from '../styles'
 
-function NavButton({ style, onPress, children }: Object): React.Element {
-  let navBarStyles = []
+function NavButton({ style, onPress, children, disabled, disabledStyle }: Object): React.Element {
+  let navButtonStyles = []
   if (Platform.OS === 'ios') {
-    navBarStyles = [styles.navBarButtonIOS, style]
+    navButtonStyles = [styles.navBarButtonIOS]
   } else if (Platform.OS === 'android') {
-    navBarStyles = [styles.navBarButtonAndroid, style]
+    navButtonStyles = [styles.navBarButtonAndroid]
+  }
+  if (disabled) {
+    navButtonStyles.push(disabledStyle)
+  } else {
+    navButtonStyles.push(style)
   }
 
-  const getTouchable = () => (
-    <TouchableOpacity onPress={onPress}>
-      <View style={navBarStyles}>
-        {children}
-      </View>
-    </TouchableOpacity>
-  )
+  const getTouchable = (): React.Element => {
+    if (disabled) {
+      return (
+        <TouchableOpacity>
+          <View style={navButtonStyles}>
+            {children}
+          </View>
+        </TouchableOpacity>
+      )
+    }
+    return (
+      <TouchableOpacity onPress={onPress}>
+        <View style={navButtonStyles}>
+          {children}
+        </View>
+      </TouchableOpacity>
+    )
+  }
 
   return getTouchable()
 }
@@ -26,10 +42,14 @@ NavButton.propTypes = {
   children: PropTypes.node,
   onPress: PropTypes.func,
   style: View.propTypes.style,
+  disabled: PropTypes.bool,
+  disabledStyle: View.PropTypes.style,
 }
 
 NavButton.defaultProps = {
   style: {},
+  disabledStyle: {},
+  disabled: false,
 }
 
 export { NavButton }

@@ -242,20 +242,44 @@ import { NavButton } from 'react-native-nav'
 
 ###### Props
 
+*disabled*
+
+Setting this to true will disable the button and use the `disabledStyle` to style the button.
+
+```javascript
+<NavButton disabled>
+  // Pass any React element(s) here
+</NavButton>
+```
+
 *style*
 
-The best option is to use the `Stylesheet` object in `React Native` to create your styles
+The best option is to use the `Stylesheet` object in `React Native` to create your styles.
 
 ```javascript
 style = StyleSheet.create({
   title: {
-    // NavButton styles here (all text styles are valid)
+    // NavButton styles here (all view styles are valid)
 
     // default iOS styles:
     marginLeft: 0,
 
     // default Android styles:
     marginLeft: 16,
+  },
+})
+```
+
+*disabledStyle*
+
+The best option is to use the `Stylesheet` object in `React Native` to create your styles.
+
+```javascript
+style = StyleSheet.create({
+  title: {
+    // disabled NavButton styles here (all view styles are valid)
+
+    // no default styles
   },
 })
 ```
