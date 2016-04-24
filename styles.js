@@ -1,12 +1,17 @@
 /* @flow */
 import {
   StyleSheet,
+  Platform
 } from 'react-native'
 
 const IOS_NAV_BAR_HEIGHT = 44
 const IOS_STATUS_BAR_HEIGHT = 20
 const ANDROID_NAV_BAR_HEIGHT = 56
-const ANDROID_STATUS_BAR_HEIGHT = 24
+let ANDROID_STATUS_BAR_HEIGHT = 24
+if (Platform.Version < 21) {
+  ANDROID_STATUS_BAR_HEIGHT = 0
+}
+
 
 export default StyleSheet.create({
   navBarContainer: {},
