@@ -1,10 +1,11 @@
 /* @flow */
-import React from 'react-native'
-const {
+import React from 'react'
+
+import {
   View,
   PropTypes,
   Platform,
-} = React
+} from 'react-native';
 import { StatusBarEnhanced } from './components/StatusBarEnhanced'
 export { NavGroup } from './components/NavGroup'
 export { NavButton } from './components/NavButton'
