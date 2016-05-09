@@ -1,6 +1,6 @@
 /* @flow */
-import React from 'react-native'
-const { Platform, View, PropTypes, StatusBar } = React
+import React from 'react';
+import { Platform, View, PropTypes, StatusBar } from 'react-native';
 import styles from '../styles'
 
 function StatusBarEnhanced({ statusBar, style }: Object): React.Element {

@@ -1,6 +1,6 @@
 /* @flow */
-import React from 'react-native'
-const { Text, PropTypes } = React
+import React from 'react';
+import { Text, PropTypes } from 'react-native';
 import styles from '../styles'
 
 function NavTitle({ style, children }: Object): React.Element {

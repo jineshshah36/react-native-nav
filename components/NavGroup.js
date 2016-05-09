@@ -1,6 +1,6 @@
 /* @flow */
-import React from 'react-native'
-const { View, PropTypes } = React
+import React from 'react'
+import { View, PropTypes } from 'react-native';
 import styles from '../styles'
 
 function NavGroup({ style, children }: Object): React.Element {
