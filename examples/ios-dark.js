@@ -1,4 +1,4 @@
-import React, { Component } from 'react-native'
+import React, {Component} from 'react';
 import NavBar, { NavButton, NavButtonText, NavTitle } from 'react-native-nav'
 
 const styles = StyleSheet.create({

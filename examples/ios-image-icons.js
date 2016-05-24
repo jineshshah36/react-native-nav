@@ -1,4 +1,5 @@
-import React, { Component, Image } from 'react-native'
+import React, {Component} from 'react';
+import {Image} from 'react-native';
 import NavBar, { NavButton, NavTitle } from 'react-native-nav'
 
 const styles = StyleSheet.create({
