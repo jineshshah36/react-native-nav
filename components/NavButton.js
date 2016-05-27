@@ -1,6 +1,6 @@
 /* @flow */
-import React from 'react';
-import { Platform, TouchableOpacity, View, PropTypes } from 'react-native';
+import React, { PropTypes } from 'react';
+import { Platform, TouchableOpacity, View } from 'react-native';
 import styles from '../styles';
 
 function NavButton({ style, onPress, children, disabled, disabledStyle }: Object): React.Element {
