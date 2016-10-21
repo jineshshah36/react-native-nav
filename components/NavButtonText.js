@@ -5,7 +5,7 @@ import styles from '../styles';
 
 function NavButtonText({ style, children }: Object): React.Element {
   return (
-    <Text style={[styles.navBarButtonText, style]} {...props}>
+    <Text style={[styles.navBarButtonText, style]} {...this.props}>
       {children}
     </Text>
   )
