@@ -5,13 +5,14 @@ import styles from '../styles';
 
 function NavButtonText({ style, children }: Object): React.Element {
   return (
-    <Text style={[styles.navBarButtonText, style]}>
+    <Text style={[styles.navBarButtonText, style]} {...this.props}>
       {children}
     </Text>
   )
 }
 
 NavButtonText.propTypes = {
+  ...Text.PropTypes,
   style: Text.propTypes.style,
   children: PropTypes.node,
 }
