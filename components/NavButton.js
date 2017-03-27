@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 import { Platform, TouchableOpacity, View } from 'react-native';
 import styles from '../styles';
 
-function NavButton({ style, onPress, children, disabled, disabledStyle }: Object): React.Element {
+function NavButton({ style, onPress, children, disabled, disabledStyle, accessibilityLabel }: Object): React.Element {
   let navButtonStyles = []
   if (Platform.OS === 'ios') {
     navButtonStyles = [styles.navBarButtonIOS]
@@ -19,7 +19,7 @@ function NavButton({ style, onPress, children, disabled, disabledStyle }: Object
   const getTouchable = (): React.Element => {
     if (disabled) {
       return (
-        <TouchableOpacity>
+        <TouchableOpacity accessibilityLabel={accessibilityLabel} accessibilityTraits={["button", "disabled"]}>
           <View style={navButtonStyles}>
             {children}
           </View>
@@ -27,7 +27,7 @@ function NavButton({ style, onPress, children, disabled, disabledStyle }: Object
       )
     }
     return (
-      <TouchableOpacity onPress={onPress}>
+      <TouchableOpacity accessibilityLabel={accessibilityLabel} onPress={onPress} accessibilityTraits="button">
         <View style={navButtonStyles}>
           {children}
         </View>
