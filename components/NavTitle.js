@@ -5,7 +5,7 @@ import styles from '../styles'
 
 function NavTitle({ style, children }: Object): React.Element {
   return (
-    <Text style={[styles.navBarTitleText, style]}>
+    <Text accessibilityTraits="header" style={[styles.navBarTitleText, style]}>
       {children}
     </Text>
   )
