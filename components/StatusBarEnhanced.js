@@ -1,9 +1,8 @@
-/* @flow */
 import React, { PropTypes } from 'react'
 import { Platform, View, StatusBar } from 'react-native'
 import styles from '../styles'
 
-function StatusBarEnhanced({ statusBar, style }: Object): React.Element {
+function StatusBarEnhanced({ statusBar, style }) {
   let statusBarConfig = {}
   if (Platform.OS === 'ios') {
     statusBarConfig = {

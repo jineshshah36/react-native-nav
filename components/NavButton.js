@@ -1,9 +1,8 @@
-/* @flow */
 import React, { PropTypes } from 'react'
 import { Platform, TouchableOpacity, View } from 'react-native'
 import styles from '../styles'
 
-function NavButton({ style, onPress, children, disabled, disabledStyle, accessibilityLabel }: Object): React.Element {
+function NavButton({ style, onPress, children, disabled, disabledStyle, accessibilityLabel }) {
   let navButtonStyles = []
   if (Platform.OS === 'ios') {
     navButtonStyles = [styles.navBarButtonIOS]
@@ -16,7 +15,7 @@ function NavButton({ style, onPress, children, disabled, disabledStyle, accessib
     navButtonStyles.push(style)
   }
 
-  const getTouchable = (): React.Element => {
+  const getTouchable = () => {
     if (disabled) {
       return (
         <TouchableOpacity accessibilityLabel={accessibilityLabel} accessibilityTraits={['button', 'disabled']}>

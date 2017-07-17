@@ -1,9 +1,8 @@
-/* @flow */
 import React, { PropTypes } from 'react';
 import { Text } from 'react-native';
 import styles from '../styles'
 
-function NavTitle({ style, children }: Object): React.Element {
+function NavTitle({ style, children }) {
   return (
     <Text accessibilityTraits="header" style={[styles.navBarTitleText, style]}>
       {children}

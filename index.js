@@ -1,4 +1,3 @@
-/* @flow */
 import React, { PropTypes } from 'react'
 
 import { View, Platform,} from 'react-native';
@@ -9,7 +8,7 @@ export { NavButtonText } from './components/NavButtonText'
 export { NavTitle } from './components/NavTitle'
 import styles from './styles'
 
-function NavigationBar({ style, children, statusBar }: Object): React.Element {
+function NavigationBar({ style, children, statusBar }) {
   let navBar = null
   if (Platform.OS === 'ios') {
     navBar = (

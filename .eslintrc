@@ -1,33 +1,6 @@
 {
-    "parser": "babel-eslint",
     "extends": "airbnb",
     "rules": {
-      "semi": [ 2, "never" ],
-      "no-console": [ 0 ],
-      "no-underscore-dangle": [ 0 ],
-      "no-unused-vars": [ 2 ],
-      "no-undef": [ 2 ],
-      "no-use-before-define": [2, { "functions": false, "classes": true }],
-      "flowtype/require-parameter-type": 1,
-      "flowtype/require-return-type": [ 1, "always", { "annotateUndefined": "never" }],
-      "flowtype/space-after-type-colon": [ 1, "always" ],
-      "flowtype/space-before-type-colon": [ 1, "never" ],
-    },
-    "env": {
-      "node": true,
-      "es6": true,
-      "mongo": true,
-      "mocha": true
-    },
-    "parserOptions": {
-      "ecmaFeatures": {
-        "jsx": true,
-        "templateStrings": true
-      },
-      "ecmaVersion": 6,
-      "sourceType": "module"
-    },
-    "plugins": [
-      "flowtype"
-    ]
+      "semi": [ 2, "never" ]
+    }
 }

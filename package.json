@@ -13,11 +13,11 @@
     "react-native": ">= 0.16"
   },
   "devDependencies": {
-    "babel-eslint": "^6.0.0",
-    "eslint": "^2.5.1",
-    "eslint-config-airbnb": "^6.2.0",
-    "eslint-plugin-flowtype": "^2.2.2",
-    "eslint-plugin-react": "^4.2.3"
+    "eslint": "4.2.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "7.1.0"
   },
   "repository": {
     "type": "git",
