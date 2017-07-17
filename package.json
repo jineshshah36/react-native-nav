@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
-    "react-native": ">= 0.16"
+    "react-native": ">= 0.44"
   },
   "devDependencies": {
     "eslint": "4.2.0",

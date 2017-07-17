@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import { View } from 'react-native'
+import { View, ViewPropTypes } from 'react-native'
 import styles from '../styles'
 
 function NavGroup({ style, children }) {
@@ -11,7 +11,7 @@ function NavGroup({ style, children }) {
 }
 
 NavGroup.propTypes = {
-  style: View.propTypes.style,
+  style: ViewPropTypes.style,
   children: PropTypes.node,
 }
 

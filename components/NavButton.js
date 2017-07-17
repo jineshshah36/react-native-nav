@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import { Platform, TouchableOpacity, View } from 'react-native'
+import { Platform, TouchableOpacity, View, ViewPropTypes } from 'react-native'
 import styles from '../styles'
 
 function NavButton({ style, onPress, children, disabled, disabledStyle, accessibilityLabel }) {
@@ -40,9 +40,9 @@ function NavButton({ style, onPress, children, disabled, disabledStyle, accessib
 NavButton.propTypes = {
   children: PropTypes.node,
   onPress: PropTypes.func,
-  style: View.PropTypes.style,
+  style: ViewPropTypes.style,
   disabled: PropTypes.bool,
-  disabledStyle: View.PropTypes.style,
+  disabledStyle: ViewPropTypes.style,
 }
 
 NavButton.defaultProps = {
