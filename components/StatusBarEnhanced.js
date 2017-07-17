@@ -1,6 +1,6 @@
 /* @flow */
-import React, { PropTypes } from 'react';
-import { Platform, View, ViewPropTypes, StatusBar } from 'react-native';
+import React, { PropTypes } from 'react'
+import { Platform, View, StatusBar } from 'react-native'
 import styles from '../styles'
 
 function StatusBarEnhanced({ statusBar, style }: Object): React.Element {
@@ -46,7 +46,7 @@ function StatusBarEnhanced({ statusBar, style }: Object): React.Element {
 
 StatusBarEnhanced.propTypes = {
   statusBar: PropTypes.object,
-  style: ViewPropTypes.style,
+  style: View.propTypes.style,
 }
 
 StatusBarEnhanced.defaultProps = {
