@@ -20,7 +20,8 @@ This library of components require the use of React Native's Babel transpiler to
 ---
 
 ### Installation
-First of all, make sure you're using `npm3+` and `babel6` for version `1.1.1` or above.
+First of all, make sure you're using `npm@3.0.0+` and `babel@6.0.0+` for version `1.1.1` or above.
+For version `2.0.0` and above, you will need to be using `react-native@0.44` or greater.
 
 ```bash
 npm install --save react-native-nav
