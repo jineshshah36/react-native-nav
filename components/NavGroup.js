@@ -1,6 +1,7 @@
-import React, { PropTypes } from 'react'
-import { View, ViewPropTypes } from 'react-native'
-import styles from '../styles'
+import React from "react"
+import PropTypes from "prop-types"
+import { View, ViewPropTypes } from "react-native"
+import styles from "../styles"
 
 function NavGroup({ style, children }) {
   return (

@@ -1,12 +1,20 @@
-import React, { PropTypes } from 'react'
-import { Platform, TouchableOpacity, View, ViewPropTypes } from 'react-native'
-import styles from '../styles'
+import React from "react"
+import PropTypes from "prop-types"
+import { Platform, TouchableOpacity, View, ViewPropTypes } from "react-native"
+import styles from "../styles"
 
-function NavButton({ style, onPress, children, disabled, disabledStyle, accessibilityLabel }) {
+function NavButton({
+  style,
+  onPress,
+  children,
+  disabled,
+  disabledStyle,
+  accessibilityLabel,
+}) {
   let navButtonStyles = []
-  if (Platform.OS === 'ios') {
+  if (Platform.OS === "ios") {
     navButtonStyles = [styles.navBarButtonIOS]
-  } else if (Platform.OS === 'android') {
+  } else if (Platform.OS === "android") {
     navButtonStyles = [styles.navBarButtonAndroid]
   }
   if (disabled) {
@@ -18,7 +26,9 @@ function NavButton({ style, onPress, children, disabled, disabledStyle, accessib
   const getTouchable = () => {
     if (disabled) {
       return (
-        <TouchableOpacity accessibilityLabel={accessibilityLabel} accessibilityTraits={['button', 'disabled']}>
+        <TouchableOpacity
+          accessibilityLabel={accessibilityLabel}
+          accessibilityTraits={["button", "disabled"]}>
           <View style={navButtonStyles}>
             {children}
           </View>
@@ -26,7 +36,10 @@ function NavButton({ style, onPress, children, disabled, disabledStyle, accessib
       )
     }
     return (
-      <TouchableOpacity accessibilityLabel={accessibilityLabel} onPress={onPress} accessibilityTraits="button">
+      <TouchableOpacity
+        accessibilityLabel={accessibilityLabel}
+        onPress={onPress}
+        accessibilityTraits="button">
         <View style={navButtonStyles}>
           {children}
         </View>
