@@ -4,7 +4,7 @@ import { Platform, View, StatusBar, ViewPropTypes } from "react-native"
 import styles from "../styles"
 
 function StatusBarEnhanced({ statusBar, style }) {
-  const statusBarConfig = {}
+  let statusBarConfig = {}
   if (Platform.OS === "ios") {
     statusBarConfig = {
       animated: true,
