@@ -1,3 +1,7 @@
+# No Longer Maintained
+
+I wrote this very early when react native was also very new. I no longer recommend using this library. Please consider using a solution like [react-navigation](https://reactnavigation.org/).
+
 ## A cross-platform (iOS / Android), fully customizable, React Native Navigation Bar component.
 
 I created this project after going through the navbars contained in [Awesome React](https://github.com/jondot/awesome-react-native) and not finding any that were cross-platform, customizable, and integrated the status bar. This project is a spiritual successor to [react-native-navbar](https://github.com/react-native-fellowship/react-native-navbar) (I forked it and ended up changing like 90% of it).
